@@ -114,13 +114,115 @@ print(real_number + 5)
 
 # convert number to  a string
 
-age = 24
+"""age = 24
 age_str = str(age)
 
-print(type(age_str))
+print(type(age_str))"""
+
+
+# ------------------------------------------------------------------------------------
+# input() - Talking back to python
+# -----------------------------------------------------------------------------------
+# Ask the user for their name
+
+# name = input('What is your name? ')
+# print('Hello,',name)
+# print('Welcome to Python Class')
+
+
+# age = int(input('How old are you? '))
+# print('yYou are,',age,'years old')
+# print('Next year you will be', age+1)
 
 
 
+# sender = input('Enter Sender name: ')
+# recipient = input('Enter recipient name: ')
+# amount= int(input('Enter amount to send(ksh): '))
+# print()
+
+# print('Sending from',sender,'to',recipient)
+# print('Amount:  Ksh ',amount)
+# charge = 11
+# print('Charge:  Ksh', charge)
+# print('Total:  Ksh ',amount + charge)
+
+
+# buyer_name = input('Enter buyer name: ')
+# phone_number = input('Enter phone number: ')
+# airtime_amount = int(input('Enter airtime amount (Ksh): '))
+# print()
+# print('Airtime purchase for', phone_number,'('+buyer_name+')')
+# print('Amount: Ksh ',airtime_amount)
+# bonus = 5
+# print('Bonus: Ksh', bonus)
+# print('Total airtime value:  ksh', airtime_amount+bonus)
+
+
+# -------------------------------------------------------
+# f-string - clean way to print
+# ----------------------------------------
+# f-string basic
+name= 'Moses'
+age= 29
+city= 'Nairobi' 
+balance = 15750.50
+
+# Name:, Moses
+
+
+# f-string way - clean and readable
+
+# print(f'Name: {name} Age: {age} city: {city}')
+
+
+
+# f-string with calculation
+
+# price = int(input('Enter price (ksh): '))
+# quantity = int(input('Quantity: '))
+
+# subtotal= price *quantity
+# vat= subtotal*0.16
+# total= subtotal+vat
+# print()
+
+# print(f'Item Price: Ksh {price}')
+# print(f'Quantity: {quantity}')
+# print(f'Subtotal: {subtotal}')
+# print(f'VAT: {vat}')
+# print(f'TOTAl: {total}')
+
+
+print('===================================')
+print('KENYA SCHOOL GRADE CALCULATOR')
+print('===================================')
+print()
+
+std_name= input('Student name: ')
+subject = input('Subject: ')
+print(f'Enter 3 test scores for {std_name}')
+test_1= int(input('Test 1: ')) 
+test_2= int(input('Test 2: '))
+test_3= int(input('Test 3: '))
+
+# Calculate the results
+total = test_1 + test_2 + test_3
+average= round(total/3,2)
+highest=max(test_1,test_2,test_3)
+lowest= min(test_1,test_2,test_3)
+
+# Print report
+print()
+print('======================================')
+print(f'REPORT : {std_name}')
+print('======================================')
+print(f'Subject: {subject}')
+print(f'Scores:  {test_1}, {test_2}, {test_3}')
+print(f'Total:   {total} / 300')
+print(f'Average: {average}')
+print(f'Highest: {highest}')
+print(f'Lowest:  {lowest}')
 
 
 
